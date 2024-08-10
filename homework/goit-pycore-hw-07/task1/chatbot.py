@@ -87,8 +87,8 @@ class Record:
         for item in self.phones:
             if isinstance(item, Phone) and item.value == old_phone:
                 item.value = new_phone
-                print(f"Phone number {old_phone} has been changed to {new_phone}")
-                return self.phones
+                return f"Phone number {old_phone} has been changed to {new_phone}"
+                #return self.phones
             else:
                 print(f"Phone number {old_phone} not found")
         
